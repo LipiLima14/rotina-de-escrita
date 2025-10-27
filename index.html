@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotina de escrita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form id="form">
+                <h1>Rotina de escrita</h1>
+            
+                <article class="tema">
+                    <h2>Tema para redação</h2>
+                    <div class="definir-tema">
+                        <label for="tema"><strong>Tema: </strong></label>
+                        <input type="text" name="tema" id="tema" required>
+                    </div>
+                    <div class="tema-selecionado disabled">
+                        <p><strong>Tema: </strong><span class="tema-proposto"></span></p>
+                    </div>
+                </article>
+
+                <article class="repertorio">
+                    <h2>Repertorio para redação</h2>
+                    <div class="definir-repertorio">
+                        <label for="repertorio"><strong>Repertorio: </strong></label>
+                        <input type="text" name="repertorio" id="repertorio" required>
+                    </div>
+                    <div class="repertorio-selecionado disabled">
+                        <p><strong>Repertorio: </strong><span class="repertorio-proposto"></span></p>
+                    </div>
+                </article>
+            
+                <article class="dias-semanais">
+                    <h2>Dias semanais</h2>
+                    <p class="dia"></p>
+                </article>
+                <input type="submit" value="Enviar" class="enviar-btn">
+            </form>
+                <button class="mudar">Mudar</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
